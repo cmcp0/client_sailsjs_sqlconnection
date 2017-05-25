@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.testing.cmcp.audiosample_log_res.MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <ImageButton android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="160dp"
+            android:background="@android:color/transparent"
+
+            />
+        <ImageButton android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_stop_white_36dp"
+            android:layout_marginLeft="160dp"
+            android:background="@android:color/transparent"
+
+            />
+        <RadioGroup android:id="@+id/radiog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10min"
+                android:textColor="@android:color/darker_gray"/>
+            <RadioButton android:id="@+id/t15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="15min"
+                android:textColor="@android:color/darker_gray"/>
+            <RadioButton android:id="@+id/t30"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="30min"
+                android:textColor="@android:color/darker_gray"/>
+            <RadioButton android:id="@+id/t60"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1h"
+                android:textColor="@android:color/darker_gray"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            android:id="@+id/bLogout"
+            android:layout_below="@+id/radiog"
+             />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
